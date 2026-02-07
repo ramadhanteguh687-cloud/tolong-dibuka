@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surat Cinta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKSOUND -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <div class="letter">
+      <h1>💌 Surat Cinta</h1>
+
+      <p class="line delay1">Aku suka sama kamu 🤍</p>
+      <p class="line delay2">Apakah kamu ingin menjadi kekasihku?</p>
+
+      <div class="choices delay3">
+        <button onclick="yes()">A. Iya ❤️</button>
+        <button onclick="no()">B. a 😅</button>
+        <button onclick="no()">C. a 🙈</button>
+        <button onclick="no()">E. a 🤍</button>
+      </div>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script>
+    function yes() {
+      document.getElementById("result").innerHTML =
+        "💖 Yeay! Makasih ya… mulai sekarang aku jaga perasaan kamu 🤍";
+    }
+
+    function no() {
+      document.getElementById("result").innerHTML =
+        "😳 Hmm… jawabannya kurang tepat. Coba pilih A ya ❤️";
+    }
+  </script>
+
+</body>
+</html>

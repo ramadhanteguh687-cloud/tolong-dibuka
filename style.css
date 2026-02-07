@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.letter {
+  background: rgba(255,255,255,0.95);
+  width: 100%;
+  max-width: 420px;
+  padding: 35px 25px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  animation: zoomIn 1.5s ease;
+}
+
+h1 {
+  color: #e63946;
+  margin-bottom: 15px;
+}
+
+.line {
+  opacity: 0;
+  font-size: 18px;
+  margin: 10px 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.delay1 { animation-delay: 0.6s; }
+.delay2 { animation-delay: 1.4s; }
+.delay3 { animation-delay: 2.2s; }
+
+.choices {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #ff6f91;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3e6c;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Animasi */
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
